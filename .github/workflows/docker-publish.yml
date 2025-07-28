@@ -19,7 +19,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker image
-      run: docker build -t raihamzaumer/hamza-portfolio:latest .
+      run: docker build -t hamzaumer/hamza-portfolio:latest .
 
     - name: Push image to DockerHub
-      run: docker push raihamzaumer/hamza-portfolio:latest
+      run: docker push hamzaumer/hamza-portfolio:latest
